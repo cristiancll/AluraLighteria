@@ -31,8 +31,8 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
-        paddingHorizontal: 24,
-        paddingTop: 15,
+        paddingHorizontal: 6,
+        paddingVertical: 16,
     },
     containerShoppingBag:{
         backgroundColor: '#FFF',
@@ -40,9 +40,7 @@ const styles = StyleSheet.create({
         borderRadius: 30
     },
     containerDescription:{
-        paddingHorizontal: 24,
-        paddingTop:30,
-
+        paddingTop: 10,
     },
     containerSeparator:{
         borderWidth: 0.5,

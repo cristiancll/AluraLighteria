@@ -1,12 +1,12 @@
 import React from 'react';
-import {View, FlatList} from 'react-native';
+import {View, FlatList, StyleSheet} from 'react-native';
 import Cabecalho from './cabecalho';
 import {DATA} from '../../../utils/data';
 import {Item} from './produto';
 
 
 const ListaProdutos = () => {
-    return <View>
+    return <View style={styles.container}>
                 <FlatList
                     numColumns={2}
                     data={DATA}
@@ -18,3 +18,9 @@ const ListaProdutos = () => {
 };
 
 export default ListaProdutos;
+
+const styles = StyleSheet.create({
+   container: {
+      marginHorizontal: 24,
+   } ,
+});
