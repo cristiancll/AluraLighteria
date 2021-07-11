@@ -1,5 +1,6 @@
 import React from 'react'
 import {View, Text, Image, StyleSheet} from 'react-native';
+import {APP_FONTS, APP_COLORS} from "../../../../styles/styles";
 
 export const Item = ({imagem, titulo}) => {
     return(
@@ -15,7 +16,7 @@ export const Item = ({imagem, titulo}) => {
 const styles = StyleSheet.create({
     containerItem:{
       height: 168,
-        backgroundColor: '#fff',
+        backgroundColor: APP_COLORS.WHITE,
         borderRadius: 10,
         flex: 1,
         justifyContent: 'center',
@@ -28,8 +29,8 @@ const styles = StyleSheet.create({
    },
     text: {
         marginTop: 8,
-        fontFamily: 'OpenSans-SemiBold',
-        fontSize: 14,
-        color: '#848486'
+        fontFamily: APP_FONTS.FAMILY.SEMI_BOLD,
+        fontSize: APP_FONTS.SIZE.REGULAR,
+        color: APP_COLORS.LIGHTER_GRAY
     }
 });

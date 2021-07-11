@@ -96,12 +96,12 @@ const styles = StyleSheet.create({
     paddingHorizontal: 24,
   },
   sectionTitle: {
-    fontSize: 24,
+    fontSize: FONT_SIZES.LARGE,
     fontWeight: '600',
   },
   sectionDescription: {
     marginTop: 8,
-    fontSize: 18,
+    fontSize: FONT_SIZES.LARGE,
     fontWeight: '400',
   },
   highlight: {

@@ -1,6 +1,7 @@
 import React from 'react';
 
 import {Image, StyleSheet, Text, View} from 'react-native';
+import {APP_COLORS, APP_FONTS} from "../../../../styles/styles";
 
 const Cabecalho = () => {
   return (
@@ -35,7 +36,7 @@ const styles = StyleSheet.create({
         paddingVertical: 16,
     },
     containerShoppingBag:{
-        backgroundColor: '#FFF',
+        backgroundColor: APP_COLORS.WHITE,
         padding: 18,
         borderRadius: 30
     },
@@ -44,7 +45,7 @@ const styles = StyleSheet.create({
     },
     containerSeparator:{
         borderWidth: 0.5,
-        borderColor: '#A1A5AA',
+        borderColor: APP_COLORS.LIGHTER_GRAY,
     },
     containerDescriptionText: {
         flexDirection: 'row',
@@ -53,14 +54,14 @@ const styles = StyleSheet.create({
     },
     descriptionText: {
         padding: 34,
-        backgroundColor: '#F4F0F4',
-        fontSize: 16,
-        fontFamily: 'OpenSans-Regular',
-        color: '#A1A5AA',
+        backgroundColor: APP_COLORS.BACKGROUND,
+        fontSize: APP_FONTS.SIZE.MEDIUM,
+        fontFamily: APP_FONTS.FAMILY.REGULAR,
+        color: APP_COLORS.LIGHTER_GRAY,
     },
     header:{
-        fontFamily: 'OpenSans-ExtraBold',
-        fontSize: 34
+        fontFamily: APP_FONTS.FAMILY.EXTRA_BOLD,
+        fontSize: APP_FONTS.SIZE.XX_LARGE,
     },
     image: {
         height: 30,

@@ -1,8 +1,9 @@
 import React from 'react';
-import {SafeAreaView, Text, View, Image, StyleSheet} from 'react-native';
+import {SafeAreaView, StyleSheet} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import ListaProdutos from './views/ListaProdutos/componentes'
+import {APP_COLORS} from "./styles/styles";
 
 const Stack = createStackNavigator();
 
@@ -26,7 +27,7 @@ const App = () => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#F4F0F4'
+        backgroundColor: APP_COLORS.BACKGROUND
     }
 });
 
