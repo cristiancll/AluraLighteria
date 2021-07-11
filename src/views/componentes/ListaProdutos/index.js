@@ -1,8 +1,8 @@
 import React from 'react';
 import {View, FlatList, StyleSheet} from 'react-native';
-import Cabecalho from './cabecalho';
 import {DATA} from '../../../utils/data';
-import {Item} from './produto';
+import {Item} from "./produto";
+import Cabecalho from "./cabecalho";
 
 
 const ListaProdutos = () => {
