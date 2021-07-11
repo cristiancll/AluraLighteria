@@ -1,6 +1,6 @@
 import React from 'react'
-import {View, Text, Image, StyleSheet, TouchableOpacity} from 'react-native';
-import {APP_FONTS, APP_COLORS} from "../../../../styles/styles";
+import {Text, Image, StyleSheet, TouchableOpacity} from 'react-native';
+import {APP_FONTS, APP_COLORS} from "../../../../../styles/styles";
 import {useNavigation} from "@react-navigation/native";
 
 export const Item = ({imagem, titulo, estudio, itemDesc, itemName, preco, id}) => {
