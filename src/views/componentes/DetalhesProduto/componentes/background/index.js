@@ -33,7 +33,7 @@ export const Background = () => {
 
 const styles = StyleSheet.create({
   bgContainer: {
-    flex: 1.5,
+    flex: 6,
   },
   imageBackground: {
       width: Dimensions.get('window').width,
