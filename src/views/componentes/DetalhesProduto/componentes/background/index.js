@@ -14,9 +14,8 @@ export const Background = () => {
               resizeMode="cover"
               style={styles.imageBackground}
           >
-
               <View style={styles.headerContainer}>
-                  <TouchableOpacity onpress={() => navigation.push('App')}>
+                  <TouchableOpacity onPress={() => navigation.goBack()}>
                       <Image
                           source={require('../../../../../assets/images/flecha-esquerda.png')}
                           style={styles.returnImage}

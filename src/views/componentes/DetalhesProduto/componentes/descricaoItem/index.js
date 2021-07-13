@@ -2,10 +2,13 @@ import React from "react";
 import {Image, StyleSheet, Text, View} from 'react-native';
 import {APP_COLORS, APP_FONTS} from "../../../../../styles/styles";
 import {Botao} from "../../../../../componentes/Botao";
+import {formatValue} from "../../../../../utils/utils";
+import {useNavigation} from "@react-navigation/native";
 
 export const DescricaoItem = ({
   imagem, estudio, itemDesc, itemName, titulo, preco, id
 }) => {
+    const navigation = useNavigation();
     return (
         <View style={styles.itemContainer}>
             <View style={styles.itemPosicao}>
@@ -20,8 +23,8 @@ export const DescricaoItem = ({
                     </View>
                     <Text style={styles.descriptionText}>{itemDesc}</Text>
                     <View style={styles.footer}>
-                        <Text style={styles.itemPrice}>{preco}</Text>
-                        <Botao title={'COMPRAR'} width={'100'}/>
+                        <Text style={styles.itemPrice}>{formatValue(preco)}</Text>
+                        <Botao title={'COMPRAR'} width={'100'} onPress={() => navigation.push('Checkout')}/>
                     </View>
                 </View>
             </View>
