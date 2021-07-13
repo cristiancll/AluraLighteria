@@ -12,7 +12,7 @@ export const DetalhesProduto = ({route}) => {
               imagem={imagem}
               estudio={estudio}
               itemDesc={itemDesc}
-              itemname={itemName}
+              itemName={itemName}
               titulo={titulo}
               preco={preco}
               id={id}
