@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-const DataContext = React.createContext();
+export const DataContext = React.createContext();
 
 const Provider = ({children}) => {
     const [checkoutItems, setCheckoutItems] = useState([]);

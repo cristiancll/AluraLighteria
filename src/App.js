@@ -6,6 +6,7 @@ import {APP_COLORS} from "./styles/styles";
 import ListaProdutos from "./views/componentes/ListaProdutos";
 import {DetalhesProduto} from "./views/componentes/DetalhesProduto";
 import Provider from "./provider";
+import {Checkout} from "./views/componentes/Checkout";
 
 const Stack = createStackNavigator();
 
@@ -23,6 +24,11 @@ const App = () => {
                        <Stack.Screen
                            name="DetalhesProduto"
                            component={DetalhesProduto}
+                           options={{headerShown: false}}
+                       />
+                       <Stack.Screen
+                           name="Checkout"
+                           component={Checkout}
                            options={{headerShown: false}}
                        />
                    </Stack.Navigator>
