@@ -9,7 +9,7 @@ export const Sacola = () => {
     const navigation = useNavigation();
     const {checkoutItems} = useContext(DataContext);
   return (
-      <TouchableOpacity onpress={() => navigation.push('Checkout')}>
+      <TouchableOpacity onPress={() => navigation.push('Checkout')}>
           <View style={styles.containerShoppingBag}>
               <Image
                   source={require('../assets/images/icone-sacola.png')}
@@ -18,7 +18,7 @@ export const Sacola = () => {
               {
                   checkoutItems.length > 0 ?
                     (<View style={styles.amountContainer}>
-                      <Text style={styles.amountText}>{checkoutItems.reduce((basket, currentItem) => basket + currentItem.amount)}</Text>
+                      <Text style={styles.amountText}>{checkoutItems.reduce((basket, currentItem) => basket + currentItem.amount, 0)}</Text>
                     </View>) : null
               }
           </View>
