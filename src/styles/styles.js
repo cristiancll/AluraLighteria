@@ -3,6 +3,7 @@ export const APP_COLORS = {
     BLACK: '#000',
     WHITE: '#FFF',
     RED: '#FF0000',
+    VERY_LIGHT_GRAY: '#F7F8FC',
     LIGHT_GRAY: '#CACACA',
     LIGHTER_GRAY: '#ACAAAB',
     LIGHT_BLUE: '#00ADEF',
