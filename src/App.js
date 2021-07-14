@@ -5,27 +5,30 @@ import {createStackNavigator} from '@react-navigation/stack';
 import {APP_COLORS} from "./styles/styles";
 import ListaProdutos from "./views/componentes/ListaProdutos";
 import {DetalhesProduto} from "./views/componentes/DetalhesProduto";
+import Provider from "./provider";
 
 const Stack = createStackNavigator();
 
 const App = () => {
   return (
        <NavigationContainer>
-        <SafeAreaView style={styles.container}>
-            <Stack.Navigator intialRouteName="ListaProdutos">
-                <Stack.Screen
-                    name="ListaProdutos"
-                    component={ListaProdutos}
-                    options={{headerShown: false}}
-                />
-                <Stack.Screen
-                    name="DetalhesProduto"
-                    component={DetalhesProduto}
-                    options={{headerShown: false}}
-                />
-            </Stack.Navigator>
+           <Provider>
+               <SafeAreaView style={styles.container}>
+                   <Stack.Navigator intialRouteName="ListaProdutos">
+                       <Stack.Screen
+                           name="ListaProdutos"
+                           component={ListaProdutos}
+                           options={{headerShown: false}}
+                       />
+                       <Stack.Screen
+                           name="DetalhesProduto"
+                           component={DetalhesProduto}
+                           options={{headerShown: false}}
+                       />
+                   </Stack.Navigator>
 
-        </SafeAreaView>
+               </SafeAreaView>
+           </Provider>
       </NavigationContainer>
   );
 };
